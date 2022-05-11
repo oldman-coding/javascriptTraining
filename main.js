@@ -156,20 +156,75 @@ function myCallBack(value) {
 myFunction(myCallBack)
 */
 
+/* My Map function
+Array.prototype.map2 = function(callback) {
+    var arrayLength = this.length;
+    var output = [];
+    for (var i=0; i< arrayLength; i++) {
+        var result = callback(this[i], i);
+        
+        output.push(result)
+    }
+    return output;
+}
+
 var courses = [
     "Java", 
     "NodeJs", 
     "Ruby", 
-    "PHP"
+    "PHP",
 ]
+
+
+var htmls = courses.map2(function(course, index) {
+    return `<h2>${course}</h2>`
+}); 
+
+console.log(htmls); 
+console.log(htmls.join(" "))
+*/
+
+/* My ForEach2
+Array.prototype.forEach2 = function(callback) {
+    for (index in this) {
+        if (this.hasOwnProperty(index)) {
+            callback(this[index], index, this)
+        }
+          
+    }
+    
+}
+
+var courses = [
+    "Java", 
+    "NodeJs", 
+    "Ruby", 
+    "PHP",
+]
+
+
+var course2 = courses.forEach2(function(course, index, array) {
+    console.log('Khoa hoc: ' + course, index, array)
+})
+
+*/
 
 // var myFunction = function (course) {
 //     return `<h2>${course}</h2>`
 // }
-var htmls = courses.map(course => 
-    `<h2>${course}</h2>`) 
-console.log(htmls)
-console.log(htmls.join(''))
+// Callback function 
+// var htmls = courses.map(course => 
+//     `<h2>${course}</h2>`) 
+// console.log(htmls)
+// console.log(htmls.join(''))
+
+
+// function processUserInput(callback) {
+// var name = prompt('Please enter your name.');
+// callback(name);
+// }
+
+// processUserInput(greeting);
 
 
 
