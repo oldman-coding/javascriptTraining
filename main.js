@@ -1,19 +1,19 @@
 const languages = [
     {   id: 1, 
         name: "english", 
-        coin: 10, 
+        coin: 60, 
         quantity: 3
     }, 
     {
         id: 2, 
         name: "Vietnamese", 
-        coin: 10, 
+        coin: 60, 
         quantity: 2
     }, 
     {
         id: 3, 
         name: "Chinese", 
-        coin: 10, 
+        coin: 60, 
         quantity: 3 
 
     }, 
@@ -31,7 +31,23 @@ const languages = [
         quantity: 10
     }
 ]
+Array.prototype.every2 = function(callback) {
+    var output = true
+    for (var index in this) {
+        if (this.hasOwnProperty(index)) {
+            let result = callback(this[index])
+        if (!result) {
+            return false
+        } 
+        }
+    }
+    return output 
+}
 
+var result = languages.every2(language => language.quantity== 50)
+console.log(result )
+
+/* My some function protorype
 Array.prototype.some2 = function(callback) {
     for (var index in this) {
         if (this.hasOwnProperty(index)) {
@@ -48,6 +64,7 @@ var result = languages.some2(function(language) {
     return language.quantity == 10000
 } )
 console.log(result)
+*/ 
 
 /* My filter prototype function
 Array.prototype.filter2 = function(callback){
