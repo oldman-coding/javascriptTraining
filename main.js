@@ -7,13 +7,13 @@ const languages = [
     {
         id: 2, 
         name: "Vietnamese", 
-        coin: 60, 
+        coin: 100, 
         quantity: 2
     }, 
     {
         id: 3, 
         name: "Chinese", 
-        coin: 60, 
+        coin: 200, 
         quantity: 3 
 
     }, 
@@ -31,6 +31,14 @@ const languages = [
         quantity: 10
     }
 ]
+
+/* Reduce Example
+const result = languages.reduce((previousValue, currentValue) => previousValue.concat(currentValue.quantity * 2), [])
+console.log(result)
+*/
+
+
+/* My every prototype function
 Array.prototype.every2 = function(callback) {
     var output = true
     for (var index in this) {
@@ -46,6 +54,7 @@ Array.prototype.every2 = function(callback) {
 
 var result = languages.every2(language => language.quantity== 50)
 console.log(result )
+*/
 
 /* My some function protorype
 Array.prototype.some2 = function(callback) {
