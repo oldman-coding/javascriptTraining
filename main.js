@@ -30,13 +30,30 @@ const languages = [
         coin: 60, 
         quantity: 10
     }
-
 ]
 
+Array.prototype.some2 = function(callback) {
+    for (var index in this) {
+        if (this.hasOwnProperty(index)) {
+            let result = callback(this[index])
+            if (result) {
+                return true
+            }
+        }
+    }
+    return false
+}
+
+var result = languages.some2(function(language) {
+    return language.quantity == 10000
+} )
+console.log(result)
+
+/* My filter prototype function
 Array.prototype.filter2 = function(callback){
     var output = [];
     for (var index in this) {
-        if (this.hasOwnProperty) {
+        if (this.hasOwnProperty(index)) {
             var result = callback(this[index], index, this); 
             if (result) {
                 output.push(this[index])
@@ -48,6 +65,8 @@ Array.prototype.filter2 = function(callback){
    
 var result = languages.filter2((language, index, array) => language.coin = 10)
 console.log(result)
+*/
+
 
 
 // var language = languages.filter(function(language, index) {
