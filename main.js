@@ -89,9 +89,10 @@ const iPhone7 = {
 function Car (type, color) {
     this.type = type
     this.color = color
-    this.run = function() {
-        console.log(this)
-    }
+}
+
+Car.prototype.run = function () {
+    console.log(this)
 }
 
 const honda = new Car('Honda', 'white')
