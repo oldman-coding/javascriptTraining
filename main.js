@@ -108,10 +108,11 @@ mazda.run()
 
 */
 
-console.log(document)
-document.write("Hello write from document")
-var headingNode = document.querySelector('.box .heading-2:nth-child(3)');
-console.log(headingNode.innerHTML)
+var headingNodes = document.querySelectorAll('.box .heading-2');
+var headingId = document.getElementById('headingId')
+var htmlForms = document.forms
+console.log(document.anchors)
+// The a can co artribue la name moi co the lay ra duoc
 
 
 /* Reduce Example
