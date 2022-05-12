@@ -32,6 +32,7 @@ const languages = [
     }
 ]
 
+/* My reduce Prototype Function
 const numbers = [1,2,3,4,5]
 
 Array.prototype.reduce2 = function(callback, result) {
@@ -50,6 +51,55 @@ Array.prototype.reduce2 = function(callback, result) {
 // const total = numbers.reduce2((previousValue, currentValue) => previousValue + currentValue, 0)
 const result = languages.reduce((previousValue, currentValue) => previousValue + currentValue.quantity * 3, 0)
 console.log(result)
+*/ 
+
+const iPhone7 = {
+    name: 'iphone7] 7', 
+    color: 'Pink', 
+    weight: '100gr', 
+    
+    takePhoto() {
+        console.log(this)
+    },
+
+    objChild: {
+        name: 'Child Object',
+        methodChild() {
+            console.log(this)
+        }
+    }
+}
+// iPhone7.objChild.methodChild()
+
+// const button = document.querySelector('button')
+// button.onclick = function () {
+//     console.dir(this.innerText)
+// }
+
+/* This example
+// 'use strict'
+
+// function myFunction() {
+//     console.log(this)
+// }
+
+// window.myFunction()
+*/
+
+function Car (type, color) {
+    this.type = type
+    this.color = color
+    this.run = function() {
+        console.log(this)
+    }
+}
+
+const honda = new Car('Honda', 'white')
+const mazda = new Car('mazda', 'black')
+
+honda.run()
+mazda.run()
+
 
 /* Reduce Example
 const result = languages.reduce((previousValue, currentValue) => previousValue.concat(currentValue.quantity * 2), [])
