@@ -86,13 +86,18 @@ const iPhone7 = {
 // window.myFunction()
 */
 
+// ArrowFunction khong co context để sử dụng this
+
+/* This 
 function Car (type, color) {
     this.type = type
     this.color = color
 }
 
 Car.prototype.run = function () {
-    console.log(this)
+    // context
+    const test = () => console.log(this)
+    test()
 }
 
 const honda = new Car('Honda', 'white')
@@ -100,6 +105,13 @@ const mazda = new Car('mazda', 'black')
 
 honda.run()
 mazda.run()
+
+*/
+
+console.log(document)
+document.write("Hello write from document")
+var headingNode = document.querySelector('.box .heading-2:nth-child(3)');
+console.log(headingNode.innerHTML)
 
 
 /* Reduce Example
