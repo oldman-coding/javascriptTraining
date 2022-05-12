@@ -20,18 +20,35 @@ const languages = [
     {
         id: 4, 
         name: "Vietnamese", 
-        coin: 10, 
+        coin: 60, 
         quantity: 50
     }, 
 
     {
         id: 5, 
         name: "Vietnamese", 
-        coin: 10, 
+        coin: 60, 
         quantity: 10
     }
 
 ]
+
+Array.prototype.filter2 = function(callback){
+    var output = [];
+    for (var index in this) {
+        if (this.hasOwnProperty) {
+            var result = callback(this[index], index, this); 
+            if (result) {
+                output.push(this[index])
+            }
+        }
+    }
+    return output
+}
+   
+var result = languages.filter2((language, index, array) => language.coin = 10)
+console.log(result)
+
 
 // var language = languages.filter(function(language, index) {
 //     console.log(index)
@@ -225,13 +242,4 @@ var course2 = courses.forEach2(function(course, index, array) {
 // }
 
 // processUserInput(greeting);
-
-
-
-
-
-
-
-
-
 
