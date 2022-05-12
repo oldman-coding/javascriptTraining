@@ -32,6 +32,25 @@ const languages = [
     }
 ]
 
+const numbers = [1,2,3,4,5]
+
+Array.prototype.reduce2 = function(callback, result) {
+    let index = 0
+    if (arguments.length < 2) {
+        result = this[0]
+        index = 1
+    }
+    for (;index < this.length; index++) {
+        result = callback(result, this[index])
+        console.log(result, this[index])
+    }
+    return result
+}
+
+// const total = numbers.reduce2((previousValue, currentValue) => previousValue + currentValue, 0)
+const result = languages.reduce((previousValue, currentValue) => previousValue + currentValue.quantity * 3, 0)
+console.log(result)
+
 /* Reduce Example
 const result = languages.reduce((previousValue, currentValue) => previousValue.concat(currentValue.quantity * 2), [])
 console.log(result)
