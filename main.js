@@ -109,11 +109,8 @@ mazda.run()
 */
 
 var headingNode = document.querySelector('h1');
-headingNode.id = 'My h1 heading'
-headingNode.className = 'My class heading'
-headingNode.setAttribute('id', 'crmviet.vn')
-
-console.log(headingNode.id, headingNode.className)
+headingNode.innerText = 'Inner text heading'
+console.log(headingNode)
 
 
 // The a can co artribue la name moi co the lay ra duoc
