@@ -30,7 +30,9 @@ const languages = [
         coin: 60, 
         quantity: 10
     }
-]/* on input
+]
+
+/* on input
 var inputElement = document.querySelector('input[type="text"]');
 var inputValue;
 
@@ -39,12 +41,28 @@ inputElement.oninput = function (e) {
 }
 */
 
-var inputElement = document.querySelector('select');
+// on key down key up
+var inputElement = document.querySelector('input[type="text"]');
 console.log(inputElement)
 
-inputElement.oninput = function (e) {
-    var inputValue = e.target.value
-    console.log(inputValue)
+// inputElement.onkeydown = function (e) {
+//     console.log(e.which)
+//     switch (e.which) {
+//         case 27: 
+//             console.log("Exit")
+//             break;
+//     }
+// }
+
+document.onkeydown = (e) => {
+    switch(e.which) {
+        case 27: 
+            alert("Do you want to exit")
+            break;
+        case 13: 
+            console.log("Send chat")
+            break;
+    }
 }
 
 
