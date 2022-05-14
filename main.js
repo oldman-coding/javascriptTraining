@@ -32,6 +32,14 @@ const languages = [
     }
 ]
 
+var buttonElement = document.querySelectorAll('h2'); 
+const clickHandler = (e) => {
+    console.log(e.target)
+}
+for (var i =0; i< buttonElement.length; i++ ) {
+    buttonElement[i].onclick = clickHandler
+}
+
 /* My reduce Prototype Function
 const numbers = [1,2,3,4,5]
 
@@ -114,12 +122,12 @@ console.log(headingNode)
 */
 
 
-var headingNode = document.querySelector('.box');
-headingNode.innerHTML = '<h1 title="heading">Inner html h1</h1><br/><h2>h2 html tag</h2>'
+
 // headingNode.style.backgroundColor = 'red'
 // headingNode.style.height = '100px'
 // headingNode.style.width = '200px'
 
+/* class list
 Object.assign(headingNode.style, {
     height : '100px', 
     width : '200px'
@@ -130,7 +138,7 @@ Object.assign(headingNode.style, {
 setInterval(() => {
     headingNode.classList.toggle('red')
 }, 1000)
-
+*/
 
 // The a can co artribue la name moi co the lay ra duoc
 
