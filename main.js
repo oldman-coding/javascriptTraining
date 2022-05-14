@@ -32,6 +32,14 @@ const languages = [
     }
 ]
 
+var inputElement = document.querySelector('input[type="text"]');
+
+inputElement.oninput = function (e) {
+    console.log(e.target.value)
+}
+
+
+/* Dom Event - OnClick Handler - Event.target
 var buttonElement = document.querySelectorAll('h2'); 
 const clickHandler = (e) => {
     console.log(e.target)
@@ -39,6 +47,8 @@ const clickHandler = (e) => {
 for (var i =0; i< buttonElement.length; i++ ) {
     buttonElement[i].onclick = clickHandler
 }
+*/
+
 
 /* My reduce Prototype Function
 const numbers = [1,2,3,4,5]
