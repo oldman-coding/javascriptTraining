@@ -30,13 +30,23 @@ const languages = [
         coin: 60, 
         quantity: 10
     }
-]
-
+]/* on input
 var inputElement = document.querySelector('input[type="text"]');
+var inputValue;
 
 inputElement.oninput = function (e) {
-    console.log(e.target.value)
+    inputValue = e.target.value
 }
+*/
+
+var inputElement = document.querySelector('select');
+console.log(inputElement)
+
+inputElement.oninput = function (e) {
+    var inputValue = e.target.value
+    console.log(inputValue)
+}
+
 
 
 /* Dom Event - OnClick Handler - Event.target
