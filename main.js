@@ -107,10 +107,19 @@ honda.run()
 mazda.run()
 
 */
-
+/* InnerText and textContent
 var headingNode = document.querySelector('h1');
 headingNode.innerText = 'Inner text heading'
 console.log(headingNode)
+*/
+
+
+var headingNode = document.querySelector('.box');
+headingNode.innerHTML = '<h1 title="heading">Inner html h1</h1><br/><h2>h2 html tag</h2>'
+headingNode.style.backgroundColor = 'red'
+headingNode.style.height = '100px'
+headingNode.style.width = '200px'
+
 
 
 // The a can co artribue la name moi co the lay ra duoc
