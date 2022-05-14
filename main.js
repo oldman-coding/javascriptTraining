@@ -108,10 +108,14 @@ mazda.run()
 
 */
 
-var headingNodes = document.querySelectorAll('.box .heading-2');
-var headingId = document.getElementById('headingId')
-var htmlForms = document.forms
-console.log(document.anchors)
+var headingNode = document.querySelector('h1');
+headingNode.id = 'My h1 heading'
+headingNode.className = 'My class heading'
+headingNode.setAttribute('id', 'crmviet.vn')
+
+console.log(headingNode.id, headingNode.className)
+
+
 // The a can co artribue la name moi co the lay ra duoc
 
 
