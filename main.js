@@ -121,11 +121,15 @@ headingNode.innerHTML = '<h1 title="heading">Inner html h1</h1><br/><h2>h2 html 
 // headingNode.style.width = '200px'
 
 Object.assign(headingNode.style, {
-    backgroundColor : 'red', 
     height : '100px', 
     width : '200px'
 })
 
+// headingNode.classList.add('red')
+
+setInterval(() => {
+    headingNode.classList.toggle('red')
+}, 1000)
 
 
 // The a can co artribue la name moi co the lay ra duoc
