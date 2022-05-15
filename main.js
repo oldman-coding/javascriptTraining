@@ -48,7 +48,30 @@ for (var i =0; i < liElements.length; i++) {
     }
 }
 
-// Stop Progagation 
+// Add event listener
+var boxClass = document.querySelector('.box-100')
+console.log(boxClass.innerHTML)
+
+var btn = document.querySelector('button')
+console.log(btn)
+
+function click1() {
+    console.log('Click Box')
+}
+function click2(e) {
+    e.stopPropagation()
+    console.log('Click button')
+}
+
+boxClass.addEventListener('click', click1)
+btn.addEventListener('click', click2)
+
+setTimeout(function(){
+    btn.removeEventListener('click', click2)
+}, 10000)
+
+
+/* Stop Progagation 
 var boxClass = document.querySelector('.box-100')
 console.log(boxClass.innerHTML)
 boxClass.onclick = () => {
@@ -60,6 +83,7 @@ btn.onclick = (e) => {
     e.stopPropagation()
     console.log(btn)
 }
+*/
 
 /* PreventDefault
 var btnElements = document.querySelectorAll('a')
