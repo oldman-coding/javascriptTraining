@@ -31,6 +31,18 @@ const languages = [
         quantity: 10
     }
 ]
+// PreventDefault
+var btnElements = document.querySelectorAll('a')
+console.log(btnElements)
+for (var i=0; i< btnElements.length; ++i){
+    
+    btnElements[i].onclick = (e) => {
+        console.log(e)
+        if (!e.target.href.startsWith('https://crmviet.vn')){
+            e.preventDefault()
+        }
+    }
+}
 
 /* on input
 var inputElement = document.querySelector('input[type="text"]');
@@ -42,8 +54,7 @@ inputElement.oninput = function (e) {
 */
 
 // on key down key up
-var inputElement = document.querySelector('input[type="text"]');
-console.log(inputElement)
+
 
 // inputElement.onkeydown = function (e) {
 //     console.log(e.which)
@@ -54,6 +65,9 @@ console.log(inputElement)
 //     }
 // }
 
+/* Onkeyup - OnkeyDown
+var inputElement = document.querySelector('input[type="text"]');
+console.log(inputElement)
 document.onkeydown = (e) => {
     switch(e.which) {
         case 27: 
@@ -64,6 +78,8 @@ document.onkeydown = (e) => {
             break;
     }
 }
+*/
+
 
 
 
