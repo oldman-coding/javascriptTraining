@@ -48,6 +48,19 @@ for (var i =0; i < liElements.length; i++) {
     }
 }
 
+// Stop Progagation 
+var boxClass = document.querySelector('.box-100')
+console.log(boxClass.innerHTML)
+boxClass.onclick = () => {
+    console.log('Box 100 class')
+}
+var btn = document.querySelector('button')
+
+btn.onclick = (e) => {
+    e.stopPropagation()
+    console.log(btn)
+}
+
 /* PreventDefault
 var btnElements = document.querySelectorAll('a')
 console.log(btnElements)
