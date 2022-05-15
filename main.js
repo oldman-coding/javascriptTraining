@@ -31,7 +31,24 @@ const languages = [
         quantity: 10
     }
 ]
-// PreventDefault
+var inputElement = document.querySelector('input[type="text"]')
+inputElement.onblur = (e) => {
+    console.log(e)
+    var inputValue = e.target.value
+    console.log(inputValue)
+}
+
+var liElements = document.querySelectorAll('li')
+console.log(liElements)
+
+for (var i =0; i < liElements.length; i++) {
+    liElements[i].onmousedown = (e) => {
+        console.log(e)
+        e.preventDefault()
+    }
+}
+
+/* PreventDefault
 var btnElements = document.querySelectorAll('a')
 console.log(btnElements)
 for (var i=0; i< btnElements.length; ++i){
@@ -43,6 +60,7 @@ for (var i=0; i< btnElements.length; ++i){
         }
     }
 }
+*/
 
 /* on input
 var inputElement = document.querySelector('input[type="text"]');

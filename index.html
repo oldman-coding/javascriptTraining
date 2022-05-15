@@ -9,16 +9,23 @@
         .red {
             background-color: green;
         }
+        ul {
+            display: none
+        }
+        
+        input:focus ~ ul {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <input type='text' placeholder="input here">
-    <input type="checkbox">
-    <select>
-        <option value="1" class="">Java</option>
-        <option value="2" class="">PHP</option>
-        <option value="3" class="">NodeJs</option>
-    </select>
+    <ul>
+        <li class="">JavaScript</li>
+        <li class="">PHP</li>
+        <li class="">Java</li>
+    </ul>
+
     <div class="box box-2" contenteditable=""> 
 
         <span class="">heading span</span>
