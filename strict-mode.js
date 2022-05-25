@@ -1,19 +1,22 @@
 'use strict';
 
 function testFunc(){
-   age = 18;
-   
+   var age = 18;
+   console.log(age)
 }
 
 testFunc();
-console.log(age)
+
 
 //strict mode o dau ham 
 // strict mode o dau doan mo the script 
 // strict mode o dau file
 
-const student = new Object.freeze({
-    fullName: "Nguyen Van A"
+const student = {}
+
+Object.defineProperty(student,'fullName', {
+    value: "Nguyen Van A", 
+    writable: true, 
 })
-student.fullName = "Nguyen van B"
+student.fullName = "nguyen van B"
 console.log(student)
