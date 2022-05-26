@@ -30,3 +30,17 @@ const a1 = {
 }
 func(a1)
 console.log(a1)
+
+function createCar (obj) {
+    obj.name = 'Mercedes'
+    return obj
+}
+
+const car = {
+    name: "BMW"
+}
+
+const newCar = createCar(car)
+
+console.log(car)
+console.log(newCar)
