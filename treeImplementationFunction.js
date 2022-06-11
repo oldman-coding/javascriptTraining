@@ -15,7 +15,7 @@ Tree.prototype.traverseDF = function(callback) {
             recurse(currentNode.children[i]);
         }
         callback(currentNode)
-        console.log(callback)
+        
     })(this._root);
 };
 
@@ -40,8 +40,8 @@ tree._root.children[2].children.push(new Node('seven'));
 tree._root.children[2].children[0].parent = tree._root.children[2];
 
 console.log(tree)
-// tree.traverseDF(function(node){
-//     console.log(node.data)
-// })
+tree.traverseDF(function(node){
+    console.log(node.data)
+})
 
-tree.traverseDF(node)
+var queue = new Queue();
