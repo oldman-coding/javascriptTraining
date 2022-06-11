@@ -1,3 +1,5 @@
+import {Queue} from './queue.js';
+
 function Node (data) {
     this.data = data; 
     this.parent = null; 
@@ -18,6 +20,19 @@ Tree.prototype.traverseDF = function(callback) {
         
     })(this._root);
 };
+
+Tree.prototype.traverseBF = function (callback) {
+    var queue = new Queue();
+    queue.enqueue(this._root);
+    currentTree = queue.dequeue();
+    while (currentTree) {
+        for (var i=0, length = currentTree.children.length; i < length; i++) {
+            queue.enqueue(currentTree.children[i]);
+        }
+        callback(currentTree); 
+        currentTree = queue.dequeue();
+    }
+}
 
 var tree = new Tree('one');
  
@@ -44,4 +59,3 @@ tree.traverseDF(function(node){
     console.log(node.data)
 })
 
-var queue = new Queue();

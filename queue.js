@@ -1,4 +1,4 @@
-class Queue {
+export class Queue {
     constructor(capacity){
         this.queue = [];
         this.capacity = capacity;
