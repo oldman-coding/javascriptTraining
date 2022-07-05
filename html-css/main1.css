@@ -1,0 +1,22 @@
+:root {
+    --text-color: red;
+}
+
+h1 {
+    color: var(--text-color)
+}
+
+li {
+    color: var(--text-color)
+}
+
+td {
+    color: var(--text-color)
+}
+
+.box {
+    width: 50%;
+    height: 100px;
+    background-color: yellow
+}
+
