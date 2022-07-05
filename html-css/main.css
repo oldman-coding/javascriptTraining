@@ -42,3 +42,8 @@ p {
 * {
     color: black
 }
+
+/* Inherited tag selector */
+html {
+    color: burlywood
+}
