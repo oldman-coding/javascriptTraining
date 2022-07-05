@@ -3,7 +3,7 @@ h1.firstH1#firstIdh1 {
 }
 
 .firstH1#firstIdh1 {
-    color: navy
+    color: navy !important
 }
 
 .firstH1 {
@@ -11,12 +11,12 @@ h1.firstH1#firstIdh1 {
 }
 
 #firstIdh1 {
-    color: yellow
+    color: yellow !important
 }
 
 h1 {
     font-weight: bold;
-    color: violet;
+    color: violet !important;
     font-size: 70px;
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 .firstTd {
-    color:blueviolet;
+    color:blueviolet !important;
 }
 
 * {
