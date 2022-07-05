@@ -3,20 +3,33 @@
 }
 
 h1 {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 3rem;
 }
 
+/* REM Inherited from html tag */
+/* EM inherited from latest tag */
 li {
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 1em; 
 }
 
 td {
     color: var(--text-color)
 }
+    
 
 .box {
     width: 50%;
     height: 100px;
     background-color: yellow
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 50px;
 }
 
