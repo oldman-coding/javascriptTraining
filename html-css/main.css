@@ -38,3 +38,7 @@ p {
 .firstTd {
     color:blueviolet;
 }
+
+* {
+    color: black
+}
