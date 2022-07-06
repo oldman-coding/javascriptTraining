@@ -79,6 +79,39 @@ body {
     background-origin: border-box;
     background-position: 50px 50px;
 }
+
+li:active {
+    color: green;
+}
+
+li:first-child {
+    color: rgb(124,120,50);
+}
+
+li:last-child {
+    color: rgb(50,14,123)
+}
+
+.boxTest {
+    margin-top:10px;
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+}
+.boxTest::before {
+    content: "Hello before box"; 
+    display: block;
+    background-color: #fff;
+    width:100px;
+    height: 100px;
+}
+.boxTest::after {
+    content: "Hello after box"; 
+    display: block;
+    background-color: #fff;
+    width:100px;
+    height: 100px;
+}
 /* vw - vh  */
 /* viewport width - viewport height */
 
