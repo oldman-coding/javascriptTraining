@@ -43,12 +43,17 @@ td {
 .box3 {
     background-color: rgb(124,120,50);
     padding: 30px;
+    width: 100%;
+    height: 20px;
     border: 10px dashed #333;
     margin-left: 50px;
+    margin-top: 40px;
     background-clip: border-box;
-    position: fixed;
-    top: 100px;
-    right: 100px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0; 
+    right: 0;
 }
 
 
