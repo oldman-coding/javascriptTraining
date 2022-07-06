@@ -70,6 +70,11 @@ h1::first-line {
     background-color: #333;
 }
 
+h1::selection {
+    background-color: violet;
+    color: #fff;
+}
+
 body {
     font-size: 100%;
     width: 500px
