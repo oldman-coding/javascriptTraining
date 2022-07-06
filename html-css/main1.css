@@ -61,6 +61,15 @@ h1:active {
     color: yellow;
 }
 
+h1::first-letter {
+    font-size: 50px;
+}
+
+h1::first-line {
+    font-style: bold;
+    background-color: #333;
+}
+
 body {
     font-size: 100%;
     width: 500px
