@@ -1,0 +1,35 @@
+.nav {
+    min-height: 30px; 
+    background-color: #EF5122;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    list-style: none;
+    color: #fff;
+    margin: 0 16px;
+}
+
+.form-container {
+    margin-top: 10px;
+}
+
+.form__row {
+    display: flex;
+    justify-content: flex-start 
+}
+
+.form__input {
+    flex: 1;
+}
+
+.form__label {
+    min-width: 90px;
+}
