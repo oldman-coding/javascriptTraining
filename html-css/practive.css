@@ -59,7 +59,7 @@
 .feature-layout {
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .feature-item {
@@ -76,4 +76,21 @@
 
 .feature-item:last-child {
     background-color: aquamarine;
+}
+
+.wrap-layout {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrap-layout__item {
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #EF5122;
+    width: 180px;
+    height: 180px;
+    color: white;
+    text-align: center;
 }
