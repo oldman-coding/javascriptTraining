@@ -33,3 +33,47 @@
 .form__label {
     min-width: 90px;
 }
+
+.column-layout {
+    margin-top: 10px;
+    padding: 12px 0;
+    display: flex;
+}
+
+.column-item {
+    flex: 1;
+}
+
+.sidebar-one {
+
+}
+
+.main-column {
+
+}
+
+.sidebar-two {
+
+}
+
+.feature-layout {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-item {
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: #EF5122;
+}
+
+.feature-item:nth-child(2) {
+    background-color: pink;
+}
+
+.feature-item:last-child {
+    background-color: aquamarine;
+}
