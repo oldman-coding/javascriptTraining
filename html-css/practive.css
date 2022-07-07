@@ -1,4 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
 .nav {
+    
     min-height: 30px; 
     background-color: #EF5122;
     display: flex;
@@ -45,21 +61,31 @@
 }
 
 .sidebar-one {
-
+    order: 2;
+    flex: 1
 }
 
 .main-column {
-
+    order: 1;
+    flex: 3;
 }
 
 .sidebar-two {
-
+    order: 3;
+    flex: 1
 }
 
 .feature-layout {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+}
+
+@media (min-width: 740px) {
+    .feature-layout {
+        flex-direction: row;
+    }
 }
 
 .feature-item {
@@ -89,8 +115,87 @@
     font-size: 48px;
     font-weight: 700;
     background-color: #EF5122;
-    width: 180px;
-    height: 180px;
+    width: 148px;
+    height: 90px;
+    line-height: 90px;
     color: white;
     text-align: center;
 }
+
+.center-layout {
+    background-color: rgb(192, 227, 194);
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
+}
+
+.center-layout__item {
+    margin: auto; 
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.chart-layout {
+    margin: 36px auto 0 auto; 
+    padding: 32px 0; 
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.chart-layout__item {
+    /* align-self: flex-end; Alternate for align-items */
+    background-color: #EF5122;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    width: 50px;
+    animation: growth ease-in 3s; 
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--percent)/2);
+    }
+    to {
+        opacity: 1;
+        height: calc(var(--percent));
+    }
+}
+
+.the-end {
+    display: flex;
+    margin: 12px auto 48px auto;
+    max-width: 948px;
+    min-height: 360px;
+    /* align-items: center; */
+}
+
+.the-end__first {
+    background-color: gray;
+    flex: 1; 
+    padding: 4px 16px;
+}
+
+.the-end__second {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+
+.the-end__second-one {
+    background-color: aqua;
+    flex: 1;
+    padding: 4px 16px;
+}
+
+.the-end__second-two {
+    background-color: blueviolet;
+    padding: 4px 16px;
+    flex: 1;
+}
+
