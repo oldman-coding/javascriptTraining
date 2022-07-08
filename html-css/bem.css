@@ -60,4 +60,12 @@
     cursor: default;
 }
 
+.btn--size-l {
+    padding: 16px 48px;
+}
+
+.btn--size-s {
+    padding: 8px 48px;
+}
+
 
