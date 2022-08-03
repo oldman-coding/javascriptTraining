@@ -17,13 +17,13 @@ body > div {
 }
 
 .toast {
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: #fff;
     padding: 20px 0;
     border-radius: 2px;
     border-left: 3px solid ;
     box-shadow: 0 5px 8px rgba(0,0,0,0.08);
+    margin-top: 20px;
  }
      
 .toast__icon  {
@@ -43,6 +43,7 @@ body > div {
 .toast__msg  {
     font-size: 14px;
     color: #888;
+    margin-top: 4px;
 }
 
 .toast__close {
