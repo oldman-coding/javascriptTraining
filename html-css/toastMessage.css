@@ -17,7 +17,8 @@ body > div {
 }
 
 .toast {
-    /* align-items: center; */
+    align-items: center;
+    display: flex;
     background-color: #fff;
     padding: 20px 0;
     border-radius: 2px;
@@ -27,7 +28,8 @@ body > div {
  }
      
 .toast__icon  {
-    
+    font-size: 24px;
+    padding: 0 10px;
 }
 
 .toast__body {
@@ -48,4 +50,39 @@ body > div {
 
 .toast__close {
     padding: 0 16px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.toast--success {
+    border-color: #3fbf62;
+}
+
+.toast--success .toast__icon {
+    color: #3fbf62;
+}
+
+.toast--info {
+    border-color: #006de6;
+}
+
+.toast--info .toast__icon {
+    color: #006de6;
+}
+
+.toast--warning {   
+    border-color: #ef9400;
+}
+
+.toast--warning .toast__icon {
+    color: #ef9400;
+}
+
+.toast--error {
+    border-color: #ec4d2b;
+}
+
+.toast--error .toast__icon {
+    color: #ec4d2b;
 }
