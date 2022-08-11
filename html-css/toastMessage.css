@@ -25,6 +25,8 @@ body > div {
     border-left: 3px solid ;
     box-shadow: 0 5px 8px rgba(0,0,0,0.08);
     margin-top: 20px;
+    min-width: 400px;
+    max-width: 500px;
  }
      
 .toast__icon  {
@@ -33,7 +35,7 @@ body > div {
 }
 
 .toast__body {
-
+    flex-grow: 1;
 }
 
 .toast__tittle {
@@ -46,6 +48,7 @@ body > div {
     font-size: 14px;
     color: #888;
     margin-top: 4px;
+    line-height: 1.5;
 }
 
 .toast__close {
@@ -85,4 +88,10 @@ body > div {
 
 .toast--error .toast__icon {
     color: #ec4d2b;
+}
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
