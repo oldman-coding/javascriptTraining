@@ -27,7 +27,7 @@ function toast ({
             const icon = icons[type]; 
             const delay = (duration/1000).toFixed(2);
 
-            toast.classList.add('toast'); 
+            // toast.classList.add('toast'); 
             toast.style.animation = `slideInLeft ease .5s, fadeOut linear 1s ${delay}s forwards`; 
             toast.innerHTML = `
                 <div class="toast toast--${type}">
