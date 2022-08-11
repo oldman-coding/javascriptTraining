@@ -143,4 +143,5 @@ background-color: #ff623d;
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 999999;
 }
