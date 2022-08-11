@@ -27,7 +27,7 @@ body > div {
     margin-top: 20px;
     min-width: 400px;
     max-width: 500px;
-    animation: slideInLeft ease .5s, fadeOut linear 1s 3s forwards;
+    
  }
 
  @keyframes slideInLeft {
@@ -77,12 +77,35 @@ body > div {
 }
 
 .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 120px;
+    transition: opacity 0.2s ease;
+  }
 
+.btn + .btn {
+margin-left: 16px;
 }
 
-.btn-success {
-    border-color: #3fbf62;  
+.btn--success {
+background-color: #71be34;
 }
+
+.btn--warn {
+background-color: #ffb702;
+}
+
+.btn--danger {
+background-color: #ff623d;
+}
+
 
 .toast--success {
     border-color: #3fbf62;
