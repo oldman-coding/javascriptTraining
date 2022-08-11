@@ -76,6 +76,14 @@ body > div {
     cursor: pointer;
 }
 
+.btn {
+
+}
+
+.btn-success {
+    border-color: #3fbf62;  
+}
+
 .toast--success {
     border-color: #3fbf62;
 }

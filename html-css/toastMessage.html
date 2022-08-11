@@ -30,5 +30,52 @@
         </div>
         
     </div>
+    <div>
+        <div class="btn btn-success">Show success</div>
+        <div class="btn btn-error">Show error</div>
+    </div>
+
+    <script>
+        function toast ({
+            title ='', 
+            message ='', 
+            type = 'info', 
+            duration = 3000,
+}) {
+        const main = document.getElementById('toast');
+        if (main) {
+            const toast = document.createElement('div');
+            toast.classList.add('toast'); 
+            toast.innerHTML = `
+                <div class="toast toast--success">
+                    <div class="toast__icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__tittle">
+                            ${title}
+                        </h3>
+                        <p class="toast__msg">
+                            ${message}
+                        </p>
+                    </div>
+                    <div  div class="toast__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                
+                </div>
+            `; 
+            main.appendChild(toast);
+        }
+
+        }
+        toast({
+            title: 'Success!',
+            message: 'Laptop need to connect to Internet',
+            type: 'success', 
+            duration: 3000
+        })
+
+    </script>
 </body>
 </html>
