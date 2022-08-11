@@ -27,6 +27,24 @@ body > div {
     margin-top: 20px;
     min-width: 400px;
     max-width: 500px;
+    animation: slideInLeft ease .5s, fadeOut linear 1s 3s forwards;
+ }
+
+ @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
  }
      
 .toast__icon  {
