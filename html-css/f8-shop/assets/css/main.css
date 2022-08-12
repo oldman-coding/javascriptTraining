@@ -22,8 +22,16 @@
     font-weight: 300;
 }
 
+.nav-item, 
+.nav-item_link
+.nav-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
 .nav-item:hover, 
-.nav-item_link:hover {
+.nav-item_link:hover, 
+.nav-icon-link:hover {
     cursor: pointer;
     color: rgba(255,255,255,0.7)
 }
@@ -35,6 +43,11 @@
 
 .nav-item_strong {
     font-weight: 500;
+}
+
+.nav-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
 }
 
 .nav-item_separate::after {
@@ -51,4 +64,9 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+}
+
+.nav-item_title {
+    cursor: text;
+    color: var(--white-color);
 }
