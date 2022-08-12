@@ -7,8 +7,32 @@
     list-style: none;
     padding-left: 0;
 }
+
 .nav-item {
+    margin: 0 8px;
+    position: relative;
+}
+.nav-item, .nav-item_link {
     display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.nav-item_strong {
+    font-weight: 500;
+}
+
+.nav-item_separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 12px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .navbar {
