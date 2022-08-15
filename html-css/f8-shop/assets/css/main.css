@@ -70,3 +70,50 @@
     cursor: text;
     color: var(--white-color);
 }
+
+.header__qr {
+    background-color: var(--white-color);
+    width: 185px;
+    position: absolute;
+    left: 0; 
+    top: 118%; 
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before {
+    content: "";
+    display: block;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 20px; 
+    position: absolute;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+.header__qr-download {
+    height: 18px;
+    margin-left: 4px;
+}
+
+.header__qr-link:first-child {
+    margin-left:5px;
+}
+
+.header__qr-link:last-child {
+    margin-right: 11px;
+}
+
+.nav-item-has-qr:hover .header__qr {
+    display: block;
+}
