@@ -309,5 +309,18 @@
 
 .auth-form__controls {
     margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn--back {
+    margin-right: 8px;
+}
+
+.auth-form__social {
+    background-color: #F5F5F5;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
 }
 

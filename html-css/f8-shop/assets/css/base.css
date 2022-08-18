@@ -76,6 +76,16 @@ html {
     font-size: 1.4rem;
     padding: 0;
     cursor: pointer;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-size-s {
+    height: 32px;
+    font-size: 12px;
 }
 
 .btn.btn--primary {
