@@ -127,6 +127,7 @@
     border: 1px solid #d3d3d3;
     transform-origin: calc(100% - 20px) right;
     animation: headerNotifyGrow ease-in 0.3s;
+    will-change: opacity, transform;
     display: none;
 }
 
