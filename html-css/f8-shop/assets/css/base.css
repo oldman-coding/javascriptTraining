@@ -81,3 +81,9 @@ html {
 .btn.btn--primary {
     background-color: var(--primary-color);
 }
+
+.btn.btn--disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
+}
