@@ -306,3 +306,8 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
+.auth-form__controls {
+    margin-top: 80px;
+}
+

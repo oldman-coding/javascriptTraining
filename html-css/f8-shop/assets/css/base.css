@@ -68,6 +68,16 @@ html {
     border-radius: 5px;
 }
 
-.modal__inner {
-   
+.btn {
+    height: 36px;
+    min-width: 142px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
 }
