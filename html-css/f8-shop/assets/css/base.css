@@ -78,6 +78,7 @@ html {
     padding: 0 8px;
     cursor: pointer;
     color: var(--text-color);
+    line-height: 1.6rem;
 }
 
 .btn.btn--normal:hover {
