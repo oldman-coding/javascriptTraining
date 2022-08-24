@@ -400,3 +400,19 @@
     width: 150px;
 }
 
+.header__search {
+    flex-grow: 1;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.header__cart {
+    text-align: center;
+    width: 150px;
+}
+
+.header__cart-icon {
+    color: var(--white-color);
+    font-size: 2.6rem;
+}
