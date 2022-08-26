@@ -478,13 +478,14 @@
     width: 120px;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 1px 2px #ccc;
 }
 
 .header__search-option-item {
     background-color: var(--white-color);
+    height: 30px;
     padding: 0 8px;
-    text-align: right;
+    padding-top: 4px;
 }
 
 .header__search-option-item span {
@@ -493,7 +494,17 @@
 }
 
 .header__search-option-item i {
-    color: var(--primary-color);
     font-size: 1.2rem;
-    margin: 0 4px 0 8px;
+    color: var(--primary-color);
+    margin: 0 8px 0 8px;
+    display: none;
+}
+
+.header__search-option-item:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.header__search-option-item--active i {
+    display: inline-block;
 }
