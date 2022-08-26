@@ -390,6 +390,7 @@
     height: var(--header-with-search-height); 
     display: flex;
     align-items: center;
+    padding: 0 8px;
 }
 
 .header__logo {
@@ -405,6 +406,8 @@
     height: 40px;
     background-color: var(--white-color);
     border-radius: 2px;
+    display: flex;
+    align-items: center;
 }
 
 .header__cart {
@@ -415,4 +418,82 @@
 .header__cart-icon {
     color: var(--white-color);
     font-size: 2.6rem;
+}
+
+.header__search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 16px; 
+    border-radius: 3px; 
+    
+}
+
+.header__search-select {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    border-left: 1px solid var(--border-color);
+    position: relative;
+}
+
+.header__search-select-label {
+    margin-left: 8px;
+    
+}
+
+.header__search-select-arrow {
+    margin: 0 8px;
+    position: relative;
+    top: 1px;
+}
+
+.header__search-btn {
+    background-color: var(--primary-color);
+    border: none;
+    height: 35px;
+    width: 59px;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+.header__search-btn:hover {
+    background-color: #ed5c3f;
+    cursor: pointer;
+}
+
+.header__search-btn-icon {
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.header__search-option {
+    list-style: none;
+    position: absolute; 
+    right: 0;
+    top: 100%;
+    padding-left: 0;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.header__search-option-item {
+    background-color: var(--white-color);
+    padding: 0 8px;
+    text-align: right;
+}
+
+.header__search-option-item span {
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.header__search-option-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0 4px 0 8px;
 }
