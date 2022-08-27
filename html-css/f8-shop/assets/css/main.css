@@ -550,6 +550,7 @@
     background-color: var(--white-color);
     box-shadow: 0 1px 3px #888;
     display: none;
+    overflow: hidden;
 }
 
 .header__search-input:focus ~ .header__search-history {
@@ -579,9 +580,9 @@
     background-color: var(--blur-color);
 }
 
-.header__search-history-item:last-child {
+/* .header__search-history-item:last-child {
     border-radius: 0 0 3px 3px;
-}
+} */
 
 .header__search-history-heading {
     font-weight: 400;
