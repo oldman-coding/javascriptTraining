@@ -549,7 +549,11 @@
     border: 1px solid var(--border-color);
     background-color: var(--white-color);
     box-shadow: 0 1px 3px #888;
-    
+    display: none;
+}
+
+.header__search-input:focus ~ .header__search-history {
+    display: block;
 }
 
 .header__search-history-list {
@@ -573,6 +577,10 @@
 
 .header__search-history-item:hover {
     background-color: var(--blur-color);
+}
+
+.header__search-history-item:last-child {
+    border-radius: 0 0 3px 3px;
 }
 
 .header__search-history-heading {
