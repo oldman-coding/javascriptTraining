@@ -569,6 +569,7 @@
     color: var(--text-color);
     line-height: 32px;
     font-size: 1.4rem;
+    display: block;
 }
 
 .header__search-history-item {
@@ -578,6 +579,7 @@
 
 .header__search-history-item:hover {
     background-color: var(--blur-color);
+    /* cursor: pointer; */
 }
 
 /* .header__search-history-item:last-child {
