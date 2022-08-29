@@ -51,6 +51,10 @@
     margin: 0 4px;
 }
 
+.nav-icon-link:nth-child(2) {
+    margin-left: 4px;
+}
+
 .nav-item_separate::after {
     content: "";
     display: block;
