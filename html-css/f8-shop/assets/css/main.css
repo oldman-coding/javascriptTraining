@@ -404,6 +404,11 @@
     width: 200px;
 }
 
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
 .header__logo-img {
     width: 150px;
 }
@@ -545,7 +550,7 @@
 /* Search History  */
 .header__search-history {
     position: absolute;
-    top: calc(100% + 4px);
+    top: calc(100% + 2px);
     width: calc(100% - 16px);
     left: 0;
     border-radius: 3px;
@@ -835,6 +840,6 @@
 
 .user__profile-option-item--separate {
     border-color: #ccc;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(0,0,0, 0.05);
 }
 

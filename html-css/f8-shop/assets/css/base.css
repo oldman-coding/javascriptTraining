@@ -22,6 +22,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Reponsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -35,6 +36,10 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.grid__column {
+    
 }
 
 /* Animation */
