@@ -128,9 +128,10 @@
     top: 118%; 
     right: 0;
     width: 400px;
+    border-radius: 2px;
     background-color: var(--white-color);
-    border: 1px solid #d3d3d3;
-    transform-origin: calc(100% - 20px) right;
+    border: 1px solid rgba(0,0,0, 0.1);
+    transform-origin: calc(100% - 32px) right;
     animation: headerNotifyGrow ease-in 0.3s;
     will-change: opacity, transform;
     display: none;
