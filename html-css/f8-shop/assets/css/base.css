@@ -195,5 +195,16 @@ html {
     color: var(--primary-color);
 }
 
+.category-item__link--active::before {
+    content: "";
+    border-width: 4px 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 
