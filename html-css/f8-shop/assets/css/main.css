@@ -1254,4 +1254,7 @@ i.home-product-item__like--active {
     font-size: 1.5rem;
 }
 
-
+.home-paging {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
