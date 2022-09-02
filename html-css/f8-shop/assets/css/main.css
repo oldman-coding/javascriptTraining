@@ -561,6 +561,7 @@
     box-shadow: 0 1px 3px #888;
     display: none;
     overflow: hidden;
+    z-index: 1;
 }
 
 .header__search-input:focus ~ .header__search-history {
@@ -613,7 +614,8 @@
 .header__cart-empty {
     position: absolute;
     width: 420px;
-    height: 300px;
+    height: 60vh;
+    /* vh = ViewPort Height */
     background-color: var(--white-color);
     top: 130%;
     right: 45px;
@@ -624,7 +626,8 @@
     will-change: opacity, transform;
     cursor: default;
     display: none;
-    z-index: 1;
+    overflow-y: auto;
+    z-index: 3;
     
 }
 
@@ -641,7 +644,19 @@
     position: absolute;
     right: -0px;
     top: -28px;
+    z-index: 1;
 }
+
+/* .header__cart-empty::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: -5px; 
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    display: block;
+} */
 
 .header__cart-list:hover .header__cart-empty {
     display: block;
@@ -978,6 +993,7 @@
     right: 0;
     background-color: var(--white-color);
     display: none;
+    z-index: 2;
 }
 
 .home-filter__price-option {
