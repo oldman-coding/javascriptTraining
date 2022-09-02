@@ -46,7 +46,7 @@ html {
     width: calc(100%/12*2);
 }
 
-grid__column-2-4 {
+.grid__column-2-4 {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
@@ -57,6 +57,7 @@ grid__column-2-4 {
     padding-right: 5px;
     width: calc(100%/12*10);
 }
+
 
 /* Animation */
 @keyframes fadeIn {
