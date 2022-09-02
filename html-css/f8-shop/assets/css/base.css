@@ -150,6 +150,37 @@ html {
     -webkit-text-fill-color: transparent;
   }
 
+.paging {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging-item {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.paging-item__link {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 400;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}
+
+.paging-item__link i {
+    font-weight: 800;
+}
+
+.paging-item--active a{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
 
 
 

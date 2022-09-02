@@ -614,7 +614,7 @@
 .header__cart-empty {
     position: absolute;
     width: 420px;
-    height: 60vh;
+    height: 50vh;
     /* vh = ViewPort Height */
     background-color: var(--white-color);
     top: 130%;
@@ -627,7 +627,7 @@
     cursor: default;
     /* display: none; */
     overflow-y: auto;
-    z-index: 3;
+    z-index: 1;
     
 }
 
@@ -708,8 +708,9 @@
 .product-item-head {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     text-align: left;
+    
 }
 
 .product-item-body {
@@ -726,6 +727,9 @@
     max-height: 4rem;
     overflow: hidden;
     margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .product-item-price {
     font-size: 1.2rem;
