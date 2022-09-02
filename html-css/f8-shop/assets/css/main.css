@@ -625,7 +625,7 @@
     animation: headerNotifyGrow ease-in 0.3s;
     will-change: opacity, transform;
     cursor: default;
-    display: none;
+    /* display: none; */
     overflow-y: auto;
     z-index: 3;
     
@@ -706,10 +706,10 @@
 }
 
 .product-item-head {
-    /* text-align: left; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
 .product-item-body {
@@ -719,8 +719,12 @@
 }
 
 .product-item-name {
+    flex: 1;
     font-weight: 400;
     font-size: 1.3rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
     margin: 0;
 }
 .product-item-price {
