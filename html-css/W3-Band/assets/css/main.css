@@ -1,0 +1,33 @@
+.header__navbar {
+    background-color: #000;
+    height: 46px;
+    display: flex;
+    padding: 0 26px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    margin-left: 46px;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+    
+}
+
+.nav-item__link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.nav-item__arrow {
+    color: var(--white-color);
+}
