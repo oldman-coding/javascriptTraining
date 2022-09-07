@@ -57,6 +57,7 @@
     background-color: var(--primary-color);
     padding-left: 0;
     display: none;
+    z-index: 1;
 }
 
 .sub-nav-item {
@@ -76,3 +77,27 @@
 .slide-show {
     width: 100%;
 }
+
+.slide-show__img {
+    width: 100%;
+    position: relative;
+}
+
+.slide-show__content {
+    margin: auto;
+}
+
+.slide-show__text {
+    position: absolute;
+    top: 70%;
+    font-size: 2rem;
+    color: var(--white-color);
+    width: 100%;
+    text-align: center;
+}
+
+.slide-show__text p {
+    font-size: 1.6rem;
+}
+
+
