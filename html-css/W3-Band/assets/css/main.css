@@ -100,4 +100,46 @@
     font-size: 1.6rem;
 }
 
+.the-band {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 64px 16px;
+    margin: 0 200px;
+}
 
+.the-band__heading {
+    font-size: 3rem;
+}
+
+.the-band__italic {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+.the-band__description {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+.the-band-member {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 10px 40px; */
+}
+
+.the-band-item {
+
+}
+
+.the-band-item p {
+    font-size: 1.6rem;
+    /* margin: 0 15px; */
+}
+
+.the-band-member__img {
+    max-width: 60%;
+    height: auto;
+}
