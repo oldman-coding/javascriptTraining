@@ -103,7 +103,7 @@
 .the-band {
     background-color: var(--white-color);
     text-align: center;
-    padding: 64px 16px;
+    padding: 64px 0px;
     margin: 0 200px;
 }
 
@@ -127,7 +127,6 @@
 .the-band-member {
     display: flex;
     justify-content: space-evenly;
-    /* padding: 10px 40px; */
 }
 
 .the-band-item {
@@ -136,10 +135,112 @@
 
 .the-band-item p {
     font-size: 1.6rem;
-    /* margin: 0 15px; */
 }
 
 .the-band-member__img {
     max-width: 60%;
+    height: auto;
+}
+
+.tour-dates {
+    background-color: #000;
+    padding: 64px 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.tour-dates__list {
+    margin: 0 200px;
+}
+
+.tour-dates__heading {
+    font-size: 3rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 30px 16px;
+}
+
+.tour-dates-day__description {
+    color:#ccc;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.tour-dates__list {
+    list-style: none;
+    background-color: var(--white-color);
+    padding-left: 0;
+
+}
+
+.tour-dates__item {
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 300;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 38px;
+    padding-left: 16px;
+}
+
+.tour-dates__item-ticket {
+    background-color: #f44336; 
+    color: var(--white-color);
+    padding: 0px 8px;
+    margin-left: 20px;
+}
+
+.tour-dates__item-calendar {
+    background-color: #000;
+    color: var(--white-color);
+    padding: 2px 8px;
+    border-radius: 50px;
+    margin-left: 680px;
+}
+
+.tour-dates__detail {
+    text-align: left; 
+    display: flex;  
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 20px 200px;
+}
+
+.tour-dates-day {
+    max-width: 30%;
+    /* height: auto; */
+}
+
+.tour-dates-day__info {
+    background-color: var(--white-color);
+    padding: 4px 8px;
+    font-size: 1.4rem;
+    
+}
+
+.tour-dates-day__location {
+
+}
+
+.tour-dates-day__date {
+    
+}
+
+.tour-dates-day__description {
+    color: var(--text-color);
+}
+
+.tour-dates-day__btn {
+    background-color: #000;
+    padding: 12px 16px;
+    color: var(--white-color);
+}
+
+
+
+.tour-dates-day__img {
+    max-width: 100%;
     height: auto;
 }
