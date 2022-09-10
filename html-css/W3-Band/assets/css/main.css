@@ -50,18 +50,17 @@
 .sub-nav {
     position: absolute;
     width: 150px;
-    /* height: 80px; */
     top: calc(100% + 1px); 
     left: 0;
     list-style: none;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
     padding-left: 0;
     display: none;
     z-index: 1;
 }
 
 .sub-nav-item {
-    /* color: var(--white-color); */
+    color: var(--text-color);
     padding: 8px 16px;
 }
 
@@ -71,7 +70,7 @@
 
 .sub-nav-item__link {
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 .slide-show {

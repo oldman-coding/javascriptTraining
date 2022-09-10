@@ -179,16 +179,16 @@
                                 <span class="contact-form__email">band2022@gmail.com</span>
                             </li>
                         </ul>
-                        <div class="contact-form__input">
+                        <form action="/action_page.php" method="get" class="contact-form__input">
                             <div class="contact-form__input-item">
-                                <input type="text" class="contact-form__input-name" placeholder="Name">
-                                <input type="email" class="contact-form__input-email" placeholder="Email">
+                                <input type="text" class="contact-form__input-name" placeholder="Name" required>
+                                <input type="email" class="contact-form__input-email" placeholder="Email" required>
                             </div>
                             <div class="contact-form__input-item">
                                 <input class="contact-form__input-message" type="text" placeholder="Message">
                             </div>
-                            <button class="contact-form__btn">SEND</button>
-                        </div>
+                            <button class="contact-form__btn" type="submit">SEND</button>
+                        </form>
                     </div>
                     
                     
@@ -223,6 +223,7 @@
             </div>
         </footer>   
     </div>
+  
     
 </body>
 </html>
