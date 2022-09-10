@@ -326,6 +326,51 @@
     
 }
 
+.contact-form__btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.map {
+    background-image: url(/W3-Band/assets/img/map.jpg);
+    background-color: #cccccc;
+    /* background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    z-index: 1;
+}
+
+.map-img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.footer-icons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons__item {
+    font-size: 1.8rem;
+    padding: 4px 4px;
+}
+
+.footer-icons__item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    color:#ccc
+}
 
 
 
