@@ -104,7 +104,7 @@
     background-color: var(--white-color);
     text-align: center;
     padding: 64px 0px;
-    margin: 0 200px;
+    margin: 0 250px;
 }
 
 .the-band__heading {
@@ -150,7 +150,7 @@
 }
 
 .tour-dates__list {
-    margin: 0 200px;
+    margin: 0 250px;
 }
 
 .tour-dates__heading {
@@ -205,12 +205,11 @@
     display: flex;  
     justify-content: space-between;
     padding-left: 0;
-    margin: 20px 200px;
+    margin: 20px 250px;
 }
 
 .tour-dates-day {
-    max-width: 30%;
-    /* height: auto; */
+    max-width: 32%;
 }
 
 .tour-dates-day__info {
@@ -244,3 +243,89 @@
     max-width: 100%;
     height: auto;
 }
+
+.contact {
+    text-align: center;
+    padding: 64px 16px;
+    margin: 0 250px;
+}
+
+.contact__heading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.contact__note {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--text-color); 
+    font-weight: 100;
+    line-height: 1.4rem;
+}
+
+.contact-form__info {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contact-form__info-item {
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.6rem;
+    padding: 8px 4px;
+    text-align: left;
+}
+
+.contact-form__info-item i {
+    /* font-size: 1.4rem; */
+    margin-right: 16px;
+}
+
+.contact-form__input {
+    width: 50%;
+    text-align: right;
+}
+
+.contact-form__input-item {
+    font-size: 1.6rem;
+}
+
+.contact-form__input-name {
+    height: 38px; 
+    width: 48%;
+    border: 1px solid #ccc;
+}
+
+.contact-form__input-email {
+    height: 38px; 
+    width: 48%;
+    border: 1px solid #ccc;
+}
+
+.contact-form__input-message {
+    height: 38px; 
+    width: calc(96% + 4px);
+    text-align: left;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form__btn {
+    background-color: #000;
+    padding: 8px 16px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    margin-top: 8px;
+    
+}
+
+
+
+
