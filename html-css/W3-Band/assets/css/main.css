@@ -94,7 +94,7 @@
 
 .slide-show__text {
     position: absolute;
-    top: 70%;
+    top: 90%;
     font-size: 2rem;
     color: var(--white-color);
     width: 100%;
@@ -145,6 +145,7 @@
 .the-band-member__img {
     max-width: 60%;
     height: auto;
+    border-radius: 4px;
 }
 
 .tour-dates {
@@ -247,6 +248,11 @@
 .tour-dates-day__img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+.tour-dates-day__img:hover {
+    background-color: #fff;
 }
 
 .contact {
@@ -337,12 +343,8 @@
 }
 
 .map {
-    background-image: url(/W3-Band/assets/img/map.jpg);
-    background-color: #cccccc;
-    /* background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; */
-    z-index: 1;
+    padding-top: 50%;
+    background: url('../img/map.jpg') top center / cover ;
 }
 
 .map-img {
@@ -375,6 +377,12 @@
 .footer__heading {
     font-size: 1.8rem;
     color:#ccc
+}
+
+.background-img {
+    margin-top: 20px;
+    padding-top: 50%; 
+    
 }
 
 
