@@ -2,9 +2,9 @@ function popUpShow() {
   var popup = document.getElementById('modal');
   popup.classList.toggle("modal--open");
   if (popup.classList.contains("modal--open")) {
-    console.log("Close)")
+    console.log("Open")
   } else {
-    console.log("Open");
+    console.log("Close");
   }
 }
 
@@ -15,15 +15,15 @@ const modal_close = document.querySelectorAll('.js-popup-close');
 
 if (btns) {
   for (btn of btns) {
-    btn.addEventListener("click", popUpShow());
+    btn.addEventListener("click", popUpShow);
   }
 };
 
 for (close of modal_close) {
-  close.addEventListener("click", popUpShow());
+  close.addEventListener("click", popUpShow);
 }
 
-modal.addEventListener("click", popUpShow());
+modal.addEventListener("click", popUpShow);
 
 
 modal_body.addEventListener("click", function (e) {

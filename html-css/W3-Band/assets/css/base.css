@@ -134,7 +134,6 @@ html {
     bottom: 0; 
     left: 0;
     display: none;
-    animation: fadeIn ease-in 0.3s;
 }
 
 .modal.modal--open {
@@ -150,13 +149,13 @@ html {
 }
 
 .modal__body {
-    --growth-from: 0.7; 
-    --growth-to: 1;
+    /* --growth-from: 0.7; 
+    --growth-to: 1; */
     margin: auto;
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
     overflow: hidden;
     /* border-radius: 5px; */
     position: relative;
     z-index: 1;
-    animation: growth linear 0.1s;
+    /* animation: growth linear 0.1s; */
 }
