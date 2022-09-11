@@ -134,7 +134,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -145,7 +145,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -156,34 +156,48 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                     </ul>
-                    <div class="popup">
+                    <div class="popup" id="popup">
                         <div class="popup-top">
                             <i class="bag-icon fa-solid fa-bag-shopping"></i>
                             <span>TICKET</span>
-                            <i class="popup__close fa-solid fa-xmark"></i>
+                            <button class="popup__close" onclick="popUpShow()">
+                                <i class ="fa-solid fa-xmark"></i>
+                            </button>
                         </div>
                         
-                        <form action="/action_page.php" method="get" class="popup-body">
+                        <div class="popup-body">
                             <div class="ticket__price">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                                 <span class="ticket-label">Tickets, 15$ per person</span>
                                 
                             </div>
-                            <input class='ticket-input' type="text" placeholder="How many">
+                            <input class='ticket-input' type="text" placeholder="How many?">
                             <div class="ticket__price">
                                 <i class="fa-solid fa-user"></i>
                                 <span class="ticket-label">Send to</span>
                             </div>
-                            <input class="ticket-input" type="text" placeholder="Send to">
+                            <input class="ticket-input" type="text" placeholder="Enter email">
                             <button class="btn-pay">
                                 PAY 
                                 <span><i class="fa-solid fa-check"></i></span>
                             </button>
-                        </form>
+                            <div class="popup-bottom">
+                                <button onclick="popUpShow()" class="btn btn--primary btn--small">
+                                    Close 
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <p>
+                                    Need
+                                    <a href="" class="popup-help__link">help?</a>
+                                </p>
+                                    
+                            </div>
+                        </div>
+                        <script src="popUp.js"></script>
                     </div>
                 </div>
                 <div class="contact" id="contact">
@@ -242,7 +256,7 @@
                             <i class="fa-brands fa-vimeo"></i>
                         </li>
                     </ul>
-                    <p class="footer__heading">Powered by w3.css</p>
+                    <p class="footer__heading">Powered by Global Music Corporation</p>
                 </div>
             </div>
         </footer>   
