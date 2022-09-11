@@ -134,7 +134,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button class="tour-dates-day__btn js-btn-modal"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -145,7 +145,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button class="tour-dates-day__btn js-btn-modal"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -156,7 +156,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button onclick="popUpShow()" class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
+                                <button class="tour-dates-day__btn js-btn-modal"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                     </ul>
@@ -222,14 +222,14 @@
                 </div>
             </div>
         </footer>
-        <div class="modal">
+        <div class="modal js-modal" id="modal">
             <div class="modal__overlay"></div>
-            <div class="modal__body">
+            <div class="modal__body js-modal-body">
                 <div class="popup" id="popup">
                     <div class="popup-top">
                         <i class="bag-icon fa-solid fa-bag-shopping"></i>
                         <span>TICKET</span>
-                        <button class="popup__close" onclick="popUpShow()">
+                        <button class="popup__close js-popup-close">
                             <i class ="fa-solid fa-xmark"></i>
                         </button>
                     </div>
@@ -250,7 +250,7 @@
                             <span><i class="fa-solid fa-check"></i></span>
                         </button>
                         <div class="popup-bottom">
-                            <button onclick="popUpShow()" class="btn btn--primary btn--small">
+                            <button class="js-popup-close btn btn--primary btn--small">
                                 Close 
                                 <i class="fa-solid fa-xmark"></i>
                             </button>

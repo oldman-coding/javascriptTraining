@@ -159,7 +159,7 @@
     width: 900px;
     height: 470px;
     z-index: 1;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -169,7 +169,7 @@
 
 .popup-top {
     position: relative;
-    height: calc(100%/3);
+    height: 30%;
     background-color: #009688;
     color: var(--white-color);
     font-size: 2.8rem;
@@ -210,7 +210,7 @@
 }
     
 .popup-bottom {
-    /* margin-top: 16px; */
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -331,6 +331,10 @@
     padding: 12px 16px;
     color: var(--white-color);
     cursor: pointer;
+}
+
+.tour-dates-day__btn:hover {
+    background-color: #ccc;
 }
 
 

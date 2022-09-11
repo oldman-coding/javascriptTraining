@@ -108,6 +108,15 @@ html {
 
 }
 
+@keyframes appearIn {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 @keyframes growth {
     from {
         transform: scale(var(--growth-from));
@@ -124,8 +133,12 @@ html {
     right: 0; 
     bottom: 0; 
     left: 0;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.modal.modal--open {
     display: flex;
-    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -142,7 +155,7 @@ html {
     margin: auto;
     background-color: var(--white-color);
     overflow: hidden;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     position: relative;
     z-index: 1;
     animation: growth linear 0.1s;
