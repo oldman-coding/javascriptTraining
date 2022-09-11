@@ -156,13 +156,10 @@
 }
 
 .popup {
-    position: fixed;
-    visibility: hidden;
-    top: 120px;
-    left: 309px;
     width: 900px;
     height: 470px;
     z-index: 1;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -192,6 +189,10 @@
     background-color: transparent;
 }
 
+.popup__close:hover {
+    background-color: #ccc;
+}
+
 .popup__close i {
     color: var(--white-color);
 }
@@ -209,7 +210,7 @@
 }
     
 .popup-bottom {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     display: flex;
     justify-content: space-between;
     align-items: baseline;

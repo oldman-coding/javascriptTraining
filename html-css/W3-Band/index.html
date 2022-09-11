@@ -160,45 +160,7 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="popup" id="popup">
-                        <div class="popup-top">
-                            <i class="bag-icon fa-solid fa-bag-shopping"></i>
-                            <span>TICKET</span>
-                            <button class="popup__close" onclick="popUpShow()">
-                                <i class ="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        
-                        <div class="popup-body">
-                            <div class="ticket__price">
-                                <i class="fa-solid fa-cart-arrow-down"></i>
-                                <span class="ticket-label">Tickets, 15$ per person</span>
-                                
-                            </div>
-                            <input class='ticket-input' type="text" placeholder="How many?">
-                            <div class="ticket__price">
-                                <i class="fa-solid fa-user"></i>
-                                <span class="ticket-label">Send to</span>
-                            </div>
-                            <input class="ticket-input" type="text" placeholder="Enter email">
-                            <button class="btn-pay">
-                                PAY 
-                                <span><i class="fa-solid fa-check"></i></span>
-                            </button>
-                            <div class="popup-bottom">
-                                <button onclick="popUpShow()" class="btn btn--primary btn--small">
-                                    Close 
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                                <p>
-                                    Need
-                                    <a href="" class="popup-help__link">help?</a>
-                                </p>
-                                    
-                            </div>
-                        </div>
-                        <script src="popUp.js"></script>
-                    </div>
+
                 </div>
                 <div class="contact" id="contact">
                     <h1 class="contact__heading">CONTACT</h1>
@@ -259,7 +221,50 @@
                     <p class="footer__heading">Powered by Global Music Corporation</p>
                 </div>
             </div>
-        </footer>   
+        </footer>
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="popup" id="popup">
+                    <div class="popup-top">
+                        <i class="bag-icon fa-solid fa-bag-shopping"></i>
+                        <span>TICKET</span>
+                        <button class="popup__close" onclick="popUpShow()">
+                            <i class ="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="popup-body">
+                        <label for="quantity-input" class="ticket__price">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <span class="ticket-label">Tickets, 15$ per person</span>
+                        </label>
+                        <input class='ticket-input' id="quantity-input" type="text" placeholder="How many?">
+                        <label for="email-input" class="ticket__price">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="ticket-label">Send to</span>
+                        </label>
+                        <input class="ticket-input" id="email-input" type="text" placeholder="Enter email">
+                        <button class="btn-pay">
+                            PAY 
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </button>
+                        <div class="popup-bottom">
+                            <button onclick="popUpShow()" class="btn btn--primary btn--small">
+                                Close 
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <p>
+                                Need
+                                <a href="" class="popup-help__link">help?</a>
+                            </p>
+                                
+                        </div>
+                    </div>
+                    <script src="popUp.js"></script>
+                </div>
+            </div>
+        </div>   
     </div>
   
     
