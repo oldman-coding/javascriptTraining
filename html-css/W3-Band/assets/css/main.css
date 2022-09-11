@@ -155,6 +155,61 @@
     width: 100%;
 }
 
+.popup {
+    width: 900px;
+    height: 470px;
+    background-color: #009688;
+}
+
+.popup-top {
+    position: relative;
+    height: calc(100%/3);
+    color: var(--white-color);
+    font-size: 2.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.bag-icon {
+    margin-right: 8px;
+}
+
+.popup-body {
+    height: 70%;
+    background-color: var(--white-color);
+    padding: 20px 15px;
+    text-align: left;
+}
+    
+.popup-bottom {
+
+}
+
+.ticket__price {
+    font-size: 1.6rem;
+    font-weight: 250;
+}
+
+.ticket-label {
+
+}
+
+.ticket-input {
+    width: 100%;
+    height: 39px;
+    margin: 20px 0;
+}
+
 .tour-dates__list {
     margin: 0 250px;
 }
@@ -252,7 +307,12 @@
 }
 
 .tour-dates-day__img:hover {
-    background-color: #fff;
+    opacity: 0.6;
+}
+
+.tour-dates-day__link {
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .contact {
@@ -383,6 +443,26 @@
     margin-top: 20px;
     padding-top: 50%; 
     
+}
+
+.btn-pay {
+    min-width: 142px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 8px;
+    cursor: pointer;
+    line-height: 1.8rem;
+
+    text-decoration: none;
+    background-color: #009688;
+    color: var(--white-color); 
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* display: block; */
 }
 
 

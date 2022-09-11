@@ -56,5 +56,17 @@ html {
 .grid__column-10 {
     padding-left: 5px;
     padding-right: 5px;
-    width: calc(100%/12*10);
+height: 36px;
+    min-width: 142px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    line-height: 1.6rem;    width: calc(100%/12*10);
+}
+
+.btn {
+    
 }

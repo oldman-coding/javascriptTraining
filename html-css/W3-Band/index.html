@@ -134,7 +134,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn">Buy Tickets</button>
+                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -145,7 +145,7 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn">Buy Tickets</button>
+                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                         <li class="tour-dates-day">
@@ -156,10 +156,35 @@
                                 <p class="tour-dates-day__description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="tour-dates-day__btn">Buy Tickets</button>
+                                <button class="tour-dates-day__btn"><a href="" class="tour-dates-day__link">Buy Tickets</a></button>
                             </div>
                         </li>
                     </ul>
+                    <div class="popup">
+                        <div class="popup-top">
+                            <i class="bag-icon fa-solid fa-bag-shopping"></i>
+                            <span>TICKET</span>
+                            <i class="popup__close fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        <form action="/action_page.php" method="get" class="popup-body">
+                            <div class="ticket__price">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                                <span class="ticket-label">Tickets, 15$ per person</span>
+                                
+                            </div>
+                            <input class='ticket-input' type="text" placeholder="How many">
+                            <div class="ticket__price">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="ticket-label">Send to</span>
+                            </div>
+                            <input class="ticket-input" type="text" placeholder="Send to">
+                            <button class="btn-pay">
+                                PAY 
+                                <span><i class="fa-solid fa-check"></i></span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div class="contact" id="contact">
                     <h1 class="contact__heading">CONTACT</h1>
@@ -194,7 +219,6 @@
                     
                 </div>
                 <div class="map">
-                    <!-- <img class="map-img" src="/W3-Band/assets/img/map.jpg" alt="Maps"> -->
                 </div>
             </div>
         </div>
