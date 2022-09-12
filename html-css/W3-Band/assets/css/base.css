@@ -67,6 +67,34 @@ html {
     line-height: 1.6rem;    width: calc(100%/12*10);
 }
 
+.row {
+    margin-left: -8px; 
+    margin-right: -8px; 
+
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left; 
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: calc(100%/3);
+}
+
+.col-2 {
+    width: 50%;
+}
+
+
+
 .btn {
     height: 36px;
     min-width: 142px;
