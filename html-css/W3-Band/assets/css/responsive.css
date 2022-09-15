@@ -1,7 +1,9 @@
 
 /* PC */
 @media (min-width: 1024px) {
-
+    .mobile-menu {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -11,5 +13,24 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-   
+    .nav-list {
+        display: inline-block;
+    }
+    .header__navbar {
+        /* height: 12px; */
+    }
+    .nav-item__search {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        font-size: 1.6rem;
+        color: var(--white-color);
+        background-color: #000;
+        z-index: 3;
+    }
+
+    .mobile-menu:hover {
+        background-color: #ccc;
+    }
 }

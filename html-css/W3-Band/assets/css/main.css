@@ -91,16 +91,16 @@
 
 .slide-show__img {
     width: 100%;
-    position: relative;
+    
 }
 
-.slide-show__content {
-    margin: auto;
+.slide-show-content {
+    position: relative;
 }
 
 .slide-show__text {
     position: absolute;
-    top: 90%;
+    top: 80%;
     font-size: 2rem;
     color: var(--white-color);
     width: 100%;
