@@ -8,16 +8,21 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .mobile-menu {
+        display: none;
+    }
 
 }
 
 /* Mobile */
 @media (max-width: 739px) {
     .nav-list {
-        display: inline-block;
+        display: block;
+        /* max-height: 100%; */
     }
-    .header__navbar {
-        /* height: 12px; */
+    
+    .header__navbar--toggle {
+        height: auto;    
     }
     .nav-item__search {
         display: none;
@@ -27,6 +32,7 @@
         font-size: 1.6rem;
         color: var(--white-color);
         background-color: #000;
+        text-align: start;
         z-index: 3;
     }
 

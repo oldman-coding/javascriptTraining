@@ -18,7 +18,7 @@
     <div class="app">
         <header>
             <div class="grid">
-                <nav class="header__navbar">
+                <nav id = "header__navbar" class="header__navbar">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a href="" class="nav-item__link">Home</a>
@@ -55,10 +55,12 @@
                         <a href="" class="nav-item nav-item__search">
                             <i class="search-btn fa-solid fa-magnifying-glass "></i>
                         </a>
-                        <a href="" class="nav-item mobile-menu">
+                        <a href="#" class="nav-item mobile-menu js-mobile-menu">
                             <i class="fa-solid fa-bars"></i>
                         </a>
+                        <script src="/stickyMobile.js"></script>
                     </div>
+                    
                 </nav>
             </div>
         </header>
@@ -267,7 +269,8 @@
                                 
                         </div>
                     </div>
-                    <script src="popUp.js"></script>
+                    <script src="/popUp.js"></script>
+                    
                 </div>
             </div>
         </div>   

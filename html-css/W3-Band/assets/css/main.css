@@ -13,7 +13,8 @@
     height: 46px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    overflow: hidden;
     z-index: 1;
 }
 
