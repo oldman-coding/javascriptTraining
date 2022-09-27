@@ -116,7 +116,7 @@
     background-color: var(--white-color);
     text-align: center;
     padding: 64px 0px;
-    margin: 0 250px;
+    margin: 0 10%;
 }
 
 .the-band__heading {
@@ -163,8 +163,8 @@
 }
 
 .popup {
-    width: 900px;
-    height: 470px;
+    width: 70%;
+    height: 50%;
     z-index: 2;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -252,7 +252,7 @@
 }
 
 .tour-dates__list {
-    margin: 0 250px;
+    margin: 0 10%;
 }
 
 .tour-dates__heading {
@@ -307,7 +307,7 @@
     display: flex;  
     justify-content: space-between;
     padding-left: 0;
-    margin: 20px 250px;
+    margin: 20px 10%;
 }
 
 .tour-dates-day {
@@ -364,7 +364,7 @@
 .contact {
     text-align: center;
     padding: 64px 16px;
-    margin: 0 250px;
+    margin: 0 10%;
 }
 
 .contact__heading {
@@ -493,7 +493,7 @@
 }
 
 .btn-pay {
-    min-width: 142px;
+    width: 15%;
     border: none;
     border-radius: 2px;
     padding: 0 8px;

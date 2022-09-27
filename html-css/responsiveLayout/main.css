@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    background-color: yellow;
+    height: 40vh;
+}
+
+.images {
+    background-color: #ccc;
+    
+}
+
+.images ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.images ul li {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: aqua;
+    height: 100px;
+    text-align: center;
+    
+}
+
+.col-test {
+    background-color: orange;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 100px;
+}
+
+.gutter {
+    background-color: orange;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 100px;
+}
