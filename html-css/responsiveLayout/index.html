@@ -346,6 +346,7 @@
         const h2 = document.createElement('h2');
         h2.innerText = "React Tutorial Basic Create Element";
         h2.id = "heading";
+
         h2.className = "reactH2";
         h2.style = "color: red; font-weight: 300";
         Object.assign (h2.style, {
@@ -359,7 +360,15 @@
             className: "headingReact"
         }, 'Hello Guys', 'React Children');
 
-        
+        const ulDom = document.createElement('ul'); 
+
+        const liDom1 = document.createElement('li');
+        liDom1.innerText = "Java Script";
+        const liDom2 = document.createElement('li');
+        liDom2.innerText = "PHP"; 
+
+        ulDom.appendChild(liDom1);
+        ulDom.appendChild(liDom2); 
         
     </script>
 
