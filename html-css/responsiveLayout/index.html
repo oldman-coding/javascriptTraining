@@ -342,6 +342,7 @@
             <div class="col-6 col-md-4 gutter">.col-6 .col-md-4</div>
         </div>
     </div>
+    <div id="root1"></div>
     <script>
         const h2 = document.createElement('h2');
         h2.innerText = "React Tutorial Basic Create Element";
@@ -359,7 +360,7 @@
             title: "Hello", 
             className: "headingReact"
         }, 'Hello Guys', 'React Children');
-
+        // UlDom
         const ulDom = document.createElement('ul'); 
 
         const liDom1 = document.createElement('li');
@@ -369,7 +370,23 @@
 
         ulDom.appendChild(liDom1);
         ulDom.appendChild(liDom2); 
-        
+        // ReactDom
+        const reactDom = React.createElement (
+            'ul', null,  
+            React.createElement('li', null, 'JavaScript'), 
+            React.createElement('li', null, 'Java')
+        );
+
+        const postItem = React.createElement(
+            'div', {
+                className: 'post-item',
+            }, 
+            React.createElement ('h2', {title: 'Hoc react tai F8'}, "Hoc ReactJS"),  
+            React.createElement('p', null, "Hoc React tu co ban toi nang cao")
+        )
+
+        const root1 = document.getElementById("root1");
+        ReactDOM.render(postItem, root1);
     </script>
 
     <div class="container">
