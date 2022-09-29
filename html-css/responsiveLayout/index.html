@@ -86,16 +86,58 @@
             {name: 'PHP'}
 
         ]; 
+        function Header() {
+            return (
+                <div className="header">Header</div>
+            )
+
+        }
+
+        class Content extends React.Component {
+            render() {
+                return (
+                    <div className="content">Content</div>
+                )
+            }
+        }
+
+        function PostItem(props) {
+            console.log(props)
+            return (
+                <div className="post-item">
+                    <label htmlFor="email">Email</label>
+                    <input id='email'/>
+                    <img src={props.image} title={props.title}/>
+                    <h2>{props.title}</h2>
+                    <p className="description">{props.description}</p> 
+                </div>
+            )
+        }
+
         const ulRoot 
         =   <ul>
-                {courses.map(course => <li>{course.name}</li> )}
+                {courses.map((course, index) => <li key={index}>{course.name}</li> )}
             </ul>
+
+        const jsx = 
+        (   <div className="post-list">
+                <PostItem 
+                    image = 'https://files.fullstack.edu.vn/f8-prod/blog_posts/4877/632ac28157c82.png'
+                    title='So sánh JavaScript với những đối thủ khác'
+                    description ='Trong tương lai nếu bạn không nắm được JavaScript là gì thì khó mà tiến xa được trong lĩnh vực công nghệ thông tin. Tin tốt...' 
+                    callback= {()=> {}}
+                    />
+                <PostItem />
+                <PostItem />
+            </div>
+                
+        )
         
 
         const container = document.getElementById("root1");
         // ReactDOM.render(postItem, root1);
         const root1 = ReactDOM.createRoot(container);
-        root1.render (ulRoot);
+        root1.render (jsx);
     </script>
    
     <div class="container">
