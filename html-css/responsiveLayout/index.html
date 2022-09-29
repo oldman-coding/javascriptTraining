@@ -101,16 +101,20 @@
             }
         }
 
-        function PostItem(props) {
-            if (typeof props.callback === 'function') 
-                props.callback(Math.random());
+        function PostItem({
+            title, 
+            description,
+            image, 
+            callback = () => {},
+        } ) {
+            callback(Math.random() * 1000000);
             return (
                 <div className="post-item">
                     <label htmlFor="email">Email</label>
                     <input id='email'/>
-                    <img src={props.image} title={props.title}/>
-                    <h2>{props.title}</h2>
-                    <p className="description">{props.description}</p> 
+                    <img src={image} title={title}/>
+                    <h2>{title}</h2>
+                    <p className="description">{description}</p> 
                 </div>
             )
         }
