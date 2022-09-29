@@ -102,7 +102,8 @@
         }
 
         function PostItem(props) {
-            console.log(props)
+            if (typeof props.callback === 'function') 
+                props.callback(Math.random());
             return (
                 <div className="post-item">
                     <label htmlFor="email">Email</label>
@@ -125,7 +126,9 @@
                     image = 'https://files.fullstack.edu.vn/f8-prod/blog_posts/4877/632ac28157c82.png'
                     title='So sánh JavaScript với những đối thủ khác'
                     description ='Trong tương lai nếu bạn không nắm được JavaScript là gì thì khó mà tiến xa được trong lĩnh vực công nghệ thông tin. Tin tốt...' 
-                    callback= {()=> {}}
+                    callback= {(random)=> {
+                        console.log(random)
+                    }}
                     />
                 <PostItem />
                 <PostItem />
