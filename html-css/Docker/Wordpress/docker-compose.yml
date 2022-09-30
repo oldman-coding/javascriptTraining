@@ -1,0 +1,33 @@
+version: '2'
+services:
+  c-httpd: 
+    image: httpd:lastest 
+    container_name: c-httpd
+    ports:
+      - 80:9999
+      - 443:443
+    environment:
+      - name=value
+    volumes:
+      - /home/ubuntu/wordpress/www:/home/mycode/www
+      - /home/ubuntu/wordpress/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    entrypoint: "httpd-foreground"
+  
+  c-php: 
+    image: php:7.4-fpm
+    container_name: c-php
+    ports: 
+    volumes:
+      -
+
+  c-mysq: 
+    image: mysql:latest
+    container_name: c-mysql 
+    ports: 
+      - 
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - 
+
