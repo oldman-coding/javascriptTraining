@@ -89,7 +89,7 @@
             )
         }
         */
-        // Chidren Props --------------------->
+        /*
         function Button ({ title, primary }) {
             console.log(primary)
             return (
@@ -97,14 +97,30 @@
             )
                 
         }
+        */
+
+        // Chidren Props --------------------->
+        function Input ( { label, ...inputProps } ) {
+            console.log(inputProps)
+            return (
+                <div class="div">
+                    <label>{label}</label>
+                    <input  {...inputProps} />
+                    {console.log(inputProps)}
+                </div>
+            )
+        }
 
         function App() {
             const title = "welcome home"
             return (
                 <div>
-                    <Button 
-                        title = {title}
-                        primary
+                    <Input 
+                        label = "Full Name"    
+                        placeholder = "Enter name ..."
+                        // type = 'radio'
+                        onFocus = {() => console.log(Math.random())}
+                        disabled
                     />
                 </div>
             )
