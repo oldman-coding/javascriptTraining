@@ -1,10 +1,15 @@
-let a = 1 
+let a = {
+    name: 'BMW'
+}
+
 let b = a
 
-console.log(b)
+a = {
+    name: 'Mercedes', 
+    price: '50k USD'
+}
 console.log(a)
-
-console.log(a===b)
+console.log(b)
 
 const student = {
     name: "Loan Tran", 
@@ -21,7 +26,7 @@ console.log(student)
 
 // Side effect
 function func(obj) {
-    obj.name = 'Mercedes'
+    // obj.name = 'Mercedes'
     console.log(obj)
 }
 
