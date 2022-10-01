@@ -7,6 +7,24 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        .btn {
+            height: 36px;
+            min-width: 142px;
+            border: none;
+            border-radius: 2px;
+            font-size: 1.4rem;
+            padding: 0 8px;
+            cursor: pointer;
+            color: var(--text-color);
+            line-height: 36px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: orange;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -45,7 +63,7 @@
             }
 
             return (
-                <Component {...props}>{title}</Component>
+                <Component className ='btn' {...props}>{title}</Component>
             )
         }
         function App() {
@@ -69,7 +87,7 @@
                 </div>
             )
         }
-        ReactDOM.render(<App1 />, document.getElementById("root"));    
+        ReactDOM.render(<App />, document.getElementById("root"));    
     </script>
 </body>
 </html>
