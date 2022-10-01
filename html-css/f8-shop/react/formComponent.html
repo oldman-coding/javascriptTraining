@@ -59,7 +59,17 @@
                 </div>
             )
         }                  
-        ReactDOM.render(<App />, document.getElementById("root"));    
+
+        function App1() {
+            let firstAccess = null
+            return (
+                
+                <div class="">
+                    {firstAccess && <h1>Welcome to My React APP</h1>}
+                </div>
+            )
+        }
+        ReactDOM.render(<App1 />, document.getElementById("root"));    
     </script>
 </body>
 </html>
