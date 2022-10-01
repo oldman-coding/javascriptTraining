@@ -50,6 +50,7 @@
             )
         }
         */
+        /*
         function Button({ title, href, onClick}) {
             let Component = 'button'; 
             const props = {}
@@ -87,6 +88,27 @@
                 </div>
             )
         }
+        */
+        // Chidren Props --------------------->
+        function Button ({ title, primary }) {
+            console.log(primary)
+            return (
+                <button>{title}</button>
+            )
+                
+        }
+
+        function App() {
+            const title = "welcome home"
+            return (
+                <div>
+                    <Button 
+                        title = {title}
+                        primary
+                    />
+                </div>
+            )
+        }  
         ReactDOM.render(<App />, document.getElementById("root"));    
     </script>
 </body>
