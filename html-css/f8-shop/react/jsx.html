@@ -7,6 +7,9 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        h2. {}
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -356,8 +359,15 @@
             </div>
         )
     }
+    function AppTest({ title, content }) {
+        return (
+            <div>
+                <h1>{content || title }</h1>
+            </div>
+        )
+    }
 
-    ReactDOM.render(<App2 />, document.getElementById("root"));
+    ReactDOM.render(<AppTest content ="Content" title ="Welcome Home" />, document.getElementById("root"));
     </script>
 </body>
 </html>
